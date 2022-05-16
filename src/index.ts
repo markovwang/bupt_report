@@ -160,7 +160,7 @@ async function postDailyReportFormData(
         const bot = new TelegramBot(botToken);
         await bot.sendMessage(
             chatId,
-            `今日填报结果：${reportReponse.m}`,
+            `看看今天的结果喵：${reportReponse.m}`,
             { "parse_mode": "Markdown" }
         );
     }
@@ -172,7 +172,7 @@ async function postDailyReportFormData(
         const bot = new TelegramBot(botToken);
         bot.sendMessage(
             chatId,
-            `填报失败：\`${err.message}\``,
+            `填报失败喵：\`${err.message}\``,
             { "parse_mode": "Markdown" }
         );
         console.log(err);
